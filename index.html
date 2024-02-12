@@ -11,6 +11,9 @@
     <!-- Inclusion des 3 scripts nécessaires pour faire fonctionner le jeu -->
     <!-- Attention, l'ordre des fichiers js est important.  -->
     <script src="my_scripts/index.js" defer></script>
+    <!-- <script src="https://unpkg.com/vue@next" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 </head>
 <body>
     <!-- HEADER -->
@@ -61,7 +64,7 @@
 
     <!-- FOOTER -->
     <footer>
-        @Copyright : Openclassrooms. 
+        @Copyright : Gamers. 
     </footer>
 
     <!-- Popup de partage -->
@@ -73,9 +76,11 @@
                 <input type="text" id="nom" name="nom" placeholder="Votre nom">
                 <label for="email">Avec qui voulez-vous partager votre score ?</label>
                 <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                <span id="email-error"></span>
                 <button id="btnEnvoyerMail">Envoyer</button>
             </form>
         </div>
     </div>
+
 </body>
 </html>
